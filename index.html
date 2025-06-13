@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Left Sidebar Navigation -->
+        <nav class="sidebar">
+            <ul class="nav-menu">
+                <li class="nav-item">Menu 1</li>
+                <li class="nav-item">Menu 2</li>
+                <li class="nav-item">Menu 3</li>
+                <li class="nav-item">Menu 4</li>
+                <li class="nav-item">Menu 5</li>
+                <li class="nav-item">Menu 6</li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Area -->
+        <div class="main-section">
+            <!-- Top Header -->
+            <header class="top-header">
+                <button id="resetBtn" class="reset-button">Reset Demo</button>
+            </header>
+
+            <!-- Central Content Area -->
+            <main class="content-area">
+                <!-- This space is intentionally left blank for future content -->
+            </main>
+
+            <!-- Chat Pane -->
+            <div class="chat-pane" id="chatPane">
+                <div class="chat-header">
+                    <button id="collapseBtn" class="collapse-button" aria-label="Toggle chat">
+                        <span class="arrow">◀</span>
+                    </button>
+                </div>
+                <div class="chat-messages" id="chatMessages">
+                    <!-- Chat messages will appear here -->
+                </div>
+                <div class="chat-input-container">
+                    <input 
+                        type="text" 
+                        id="chatInput" 
+                        class="chat-input" 
+                        placeholder="Type a message..."
+                        maxlength="500"
+                    >
+                    <button id="sendBtn" class="send-button" aria-label="Send message">
+                        <span class="arrow-up">↑</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
